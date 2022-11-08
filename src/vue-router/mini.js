@@ -17,7 +17,7 @@ class VueRouter {
 }
 
 /**
- * 安装插件
+ * 提供安装插件的方法
  */
 VueRouter.install = function (Vue) {
   _Vue = Vue;
@@ -41,7 +41,7 @@ VueRouter.install = function (Vue) {
 };
 
 /**
- * 路由信息
+ * 路由信息类: 保存当前路由的路径
  */
 class RouteInfo {
   constructor() {

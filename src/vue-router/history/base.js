@@ -1,5 +1,8 @@
 "use strict";
 
+/**
+ * 路由信息类: 保存当前的路径和匹配到的路由信息记录
+ */
 class Route {
   constructor(path, matched) {
     this.path = path;
@@ -21,10 +24,12 @@ export function createRoute(record, path) {
   return new Route(path, matchedRecords);
 }
 
-// history基类
+/**
+ * 基类: 基本的路由系统(控制视图的显示和切换)
+ */
 export default class History {
   constructor(router) {
-    // VueRouter instance
+    // VueRouter 实例对象
     this.router = router;
 
     // 默认存储一个当前路径, 方便后续更改

@@ -13,7 +13,10 @@ function initHash() {
   }
 }
 
-export default class HashHistory extends History {
+/**
+ * hash 路由系统
+ */
+class HashHistory extends History {
   constructor(router) {
     super(router);
     initHash();
@@ -31,3 +34,5 @@ export default class HashHistory extends History {
     });
   }
 }
+
+export default HashHistory;
